@@ -1,0 +1,104 @@
+/* General Page Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    color: #333;
+    font-weight: 600;
+    margin: 20px;
+    font-size: 36px;
+}
+
+/* Container for Sorting Bars */
+#array-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 60%;
+    width: 80%;
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Styling for Sorting Bars */
+.bar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 2px;
+}
+
+.bar {
+    width: 20px;
+    margin: 0;
+    transition: height 0.2s ease;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #ff6f61, #ffb88c, #ff8a5b, #ffcc99);
+}
+
+/* Styling for the numbers above bars */
+.bar-value {
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Button Styling */
+button {
+    margin: 10px;
+    padding: 12px 20px;
+    background-color: #333;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .bar {
+        width: 15px;
+    }
+
+    .bar-value {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    .bar {
+        width: 10px;
+    }
+
+    .bar-value {
+        font-size: 10px;
+    }
+}
